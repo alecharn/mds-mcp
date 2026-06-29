@@ -1,0 +1,15 @@
+[project]
+name = "mds-mcp-server"
+version = "0.1.0"
+description = "Read-only MCP server exposing Cisco MDS NX-OS show commands over NX-API."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastmcp[apps]>=3.2.0,<4",
+    "prefab-ui==0.20.2",
+    "requests>=2.32.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.scripts]
+mds-mcp-server = "main:main"
